@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useBalance } from "@repo/store/balance";
 const Home = () => {
