@@ -1,0 +1,11 @@
+{
+  "name": "@repo/types",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "exports": {
+    "./auth": "./src/auth.types.ts"
+  }
+}

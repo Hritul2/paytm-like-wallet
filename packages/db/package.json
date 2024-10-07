@@ -8,6 +8,7 @@
     "prisma": "5.20.0"
   },
   "exports": {
-    "./client": "./src/index.ts"
+    "./client": "./src/index.ts",
+    "./types/auth": "./src/authTypes.ts"
   }
 }
