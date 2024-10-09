@@ -4,6 +4,7 @@ import {
   ArrowLeftRight as TransferIcon,
   Clock3 as TransactionsIcon,
   House as HomeIcon,
+  MoveUpRight as P2PTransfer,
 } from "lucide-react";
 export default function Layout({
   children,
@@ -24,6 +25,11 @@ export default function Layout({
             href={"/transactions"}
             icon={<TransactionsIcon />}
             title="Transactions"
+          />
+          <SidebarItem
+            href={"/p2ptransfer"}
+            icon={<P2PTransfer />}
+            title="P2P Transfer"
           />
         </div>
       </div>
