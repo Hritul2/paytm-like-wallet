@@ -10,5 +10,8 @@
   "exports": {
     "./client": "./src/index.ts",
     "./types/auth": "./src/authTypes.ts"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }
