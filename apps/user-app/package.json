@@ -11,6 +11,7 @@
   "dependencies": {
     "@repo/ui": "*",
     "bcrypt": "^5.1.1",
+    "lucide-react": "^0.451.0",
     "next": "14.2.6",
     "next-auth": "^4.24.8",
     "react": "18.3.1",
