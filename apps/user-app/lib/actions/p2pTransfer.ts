@@ -24,6 +24,8 @@ export const p2pTransfer = async (to: string, amount: number) => {
   }
   const amountInPaise = amount * 100;
   await db.$transaction(async (tx) => {
+    // Prisma doesnt allow the Lock out of the box therefore we need to create raw query
+    await tx.$queryRaw`SELECT * FROM "Balance" WHERE "userId"=${Number(from)} FOR UPDATE`;
     const fromBalance = await tx.balance.findUnique({
       where: { userId: Number(from) },
     });
